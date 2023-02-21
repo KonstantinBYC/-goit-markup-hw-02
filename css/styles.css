@@ -2,6 +2,10 @@
   --main-title-color: #fff;
   --secondary-title-color: #2e2f42;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--secondary-title-color);
+}
 
 .header {
   font-family: 'Raleway';
@@ -9,7 +13,9 @@
   text-decoration: none;
   list-style-type: none;
 }
-.header-nav {
+.header-address {
+  text-decoration: none;
+  list-style-type: none;
 }
 .header-logo1 {
   font-family: 'Raleway';
@@ -25,6 +31,8 @@
 }
 
 .header-list {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .header-item {
@@ -38,9 +46,7 @@
   /* NAVY BLUE */
   color: var(--secondary-title-color);
 }
-.header-link:hover {
-  color: orange;
-}
+
 .header-address {
   text-decoration: none;
   font-family: 'Roboto';
@@ -80,9 +86,7 @@
   color: var(--main-title-color);
   cursor: pointer;
 }
-.header-button:hover focus {
-  color: orange;
-}
+
 .Advantages {
 }
 .Advantages-item {
@@ -99,8 +103,6 @@
 
 .Advantages-desc {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   /* or 150% */
@@ -147,8 +149,6 @@
 }
 .team-position {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   /* identical to box height, or 150% */
@@ -202,14 +202,16 @@
 .list {
   list-style: none;
 }
-[href] {
-  text-decoration: none;
-}
 
 /* ---------------------portfolio ---------------------------*/
-.button {
+.button-list,
+.header-ul,
+.header-address {
+  text-decoration: none;
+  list-style-type: none;
 }
 .button-item {
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -218,10 +220,19 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #404bbf;
+  border: none;
+  color: #4d5ae5;
+  background: #f4f4fd;
+  cursor: pointer;
 }
-.portfolio {
+.button-list .button-item:hover,
+.button-list .button-item:focus {
+  color: var(--main-title-color);
+  background-color: #404bbf;
+}
+[href]:hover,
+[href]:focus {
+  color: #404bbf;
 }
 .portfolio-title {
 }
@@ -236,20 +247,14 @@
   /* identical to box height, or 120% */
   letter-spacing: 0.02em;
   /* NAVY BLUE */
-  color: #2e2f42;
+  color: var(--secondary-title-color);
 }
 .portfolio-desc {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
   /* SLATE */
   color: #434455;
-}
-.portfolio-item {
-}
-.list > {
 }
