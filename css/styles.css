@@ -70,23 +70,13 @@ a {
 .hero {
   background-color: var(--secondary-title-color);
 }
-h1,
-h2,
-h3,
-p {
-  text-align: center;
-}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--main-title-color);
-}
-.adv-title,
-.portfolio-pl,
-.portfolio-title {
-  display: none;
 }
 .header-button {
   font-family: 'Roboto';
@@ -129,6 +119,7 @@ p {
   text-transform: capitalize;
   /* NAVY BLUE */
   color: var(--secondary-title-color);
+  text-align: center;
 }
 .team {
   font-size: 36px;
@@ -138,6 +129,7 @@ p {
   text-transform: capitalize;
   /* NAVY BLUE */
   color: var(--secondary-title-color);
+  text-align: center;
 }
 .team-member {
   font-weight: 500;
@@ -147,6 +139,7 @@ p {
   letter-spacing: 0.02em;
   /* NAVY BLUE */
   color: var(--secondary-title-color);
+  text-align: center;
 }
 .team-position {
   font-size: 16px;
@@ -155,6 +148,7 @@ p {
   letter-spacing: 0.02em;
   /* SLATE */
   color: var(--text-color);
+  text-align: center;
 }
 .footer {
   background-color: var(--secondary-title-color);
@@ -226,4 +220,16 @@ p {
   letter-spacing: 0.02em;
   /* SLATE */
   color: var(--text-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
