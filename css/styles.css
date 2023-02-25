@@ -121,6 +121,12 @@ a {
   color: var(--secondary-title-color);
   text-align: center;
 }
+.ourteam {
+  background-color: var(--light-color);
+}
+.team-list-member {
+  background-color: var(--main-title-color);
+}
 .team {
   font-size: 36px;
   line-height: 1.11;
